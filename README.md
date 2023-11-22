@@ -1,6 +1,6 @@
 # solarlight
 SOLARLIGHT 홈페이지 리뉴얼<br>
-<a href="https://kim-bab.github.io/solarlight/main.html">링크 🚀</a>
+<a href="https://kim-bab.github.io/solarlight/solar.html">링크 🚀</a>
 
 - 모바일, 테블릿, pc 반응형으로 제작
 - 메인, 서브2 페이지로 구성
