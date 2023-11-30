@@ -1,3 +1,4 @@
+
 @media screen and (max-width: 1024px){
   .menu, .accodian_menu, .anchor{
   display: none;
@@ -38,6 +39,9 @@
 }
 .hamburgerbox{
   position: relative;
+  border: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   background-color: rgb(0, 137, 171);
   float: right;
   right: 0;
@@ -283,6 +287,9 @@ input[type=radio]:checked ~ .menu_content {
 /*페이지업*/
 .up{
   z-index: 999;
+  border: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   background-color: #fff;
   width: 40px;
   height: 40px;
@@ -488,6 +495,9 @@ input[type=radio]:checked ~ .menu_content {
   background-color: #fff;
   width: 70px;
   height: 70px;
+  border: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   -ms-flex-item-align: center;
   align-self: center;
   cursor: pointer;
