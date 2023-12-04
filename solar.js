@@ -5,16 +5,6 @@ var swipe = new Swiper('.swiper-container', {
         delay: 3000,
         disableOnInteraction: false,
     },
-    // pagination : { // 페이징 설정
-    //     el : '.swiper-pagination',
-    //     type:'bullets',
-    //     clickable : true,
-    //     on: {
-    //     slideChangeTransitionEnd: function(){
-    //     alert(this.activeIndex);
-    //     },
-    //     },
-    // },
     navigation: { // 네비게이션 설정
         nextEl: '.swiper-button-next', // 다음 버튼 클래스명
         prevEl: '.swiper-button-prev', // 이번 버튼 클래스명
@@ -22,47 +12,14 @@ var swipe = new Swiper('.swiper-container', {
 });
 
 
-// let we=true;
-
-// $(".swiper-button-pause").click(function(){
-//     if(we==true){
-//         $(this).addClass("on");
-//         swipe.autoplay.stop();
-//     }else{
-//         $(this).removeClass("on");
-//         swipe.autoplay.start();
-//     }
-//     we=!we;
-// });
-
-
-//우클릭방지
-let omitformtags = ["input", "textarea", "select"]
-omitformtags = omitformtags.join("|")
-function disableselect(e) {
-    if (omitformtags.indexOf(e.target.tagName.toLowerCase()) == -1)
-        return false
-}
-function reEnable() {
-    return true
-}
-if (typeof document.onselectstart != "undefined")
-    document.onselectstart = new Function("return false")
-else {
-    document.onmousedown = disableselect
-    document.onmouseup = reEnable
-}
-
-
-
 
 document.querySelector('.side0 a').classList.add('is-active');
 document.querySelector('.side0').classList.add('bgactive');
 
 /*스크롤시 메뉴 색깔 변경*/
-let container = document.querySelectorAll('.container section');
-let anchor = document.querySelectorAll('.anchor div ul li');
-let anchorLink = document.querySelectorAll('.anchor div ul li a');
+let container = document.querySelectorAll('.container>section');
+let anchor = document.querySelectorAll('.anchor>ul>li');
+let anchorLink = document.querySelectorAll('.anchor>ul>li>a');
 
 
 anchor.forEach((items, index) => {
@@ -72,6 +29,7 @@ anchor.forEach((items, index) => {
         const getId = e.target.getAttribute('href').slice(1);
         container.forEach((contents) => {
             const getOffset = contents.offsetTop - window.innerHeight / 2;
+
             if (contents.id === getId) {
                 window.scroll({
                     top: getOffset,
@@ -82,10 +40,12 @@ anchor.forEach((items, index) => {
     })
 })
 
+
 document.addEventListener('scroll', () => {
     let getScroll = window.scrollY;
-
     container.forEach((items, index) => {
+        console.log(items);
+
         if (getScroll >= items.offsetTop - window.innerHeight / 1.5) {
             anchorLink.forEach((itemsLink) => {
                 anchor.forEach((items) => {

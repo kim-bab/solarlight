@@ -10,15 +10,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>솔라라이트</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="solar.css">
     <link rel="stylesheet" href="commoncss.css">
+    <!-- <link rel="stylesheet" href="normalize.css">    -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
@@ -31,10 +32,12 @@
     <header>
         <!--mobile menu-->
         <div class="m_menu">
-            <div class="logo1"><a href="solar.html" target="_self"><img src="solar/1576030250362767.png"
-                        alt="솔라라이트 로고"></a>
+            <div class="logo1">
+                <a href="solar.html" target="_self">
+                    <img src="solar/1576030250362767.png" alt="솔라라이트 로고">
+                </a>
             </div>
-            <button class="hamburgerbox">
+            <button class="hamburgerbox" type="button">
                 <input class="menu-toggler" type="checkbox" id="menu-toggler">
                 <label for="menu-toggler"></label>
             </button>
@@ -47,51 +50,59 @@
                         <label for='tab-1'>
                             <div class="tab-t" style="color:rgb(0, 137, 171);">회사소개</div>
                         </label>
-                        <div class="menu_content">
+                        <ul class="menu_content">
                             <li><a href="solarlight_information.html" style="color:rgb(0, 137, 171);">회사소개</a></li>
                             <li><a href="solar_infor2.html" style="color:rgb(0, 137, 171);">연혁</a></li>
                             <li><a href="#">홍보영상</a></li>
-                            <li><a href="#">파트너</a></li>
                             <li><a href="#">오시는 길</a></li>
-                        </div>
+                        </ul>
                     </div>
 
                     <div class="wrap-2">
                         <input type="radio" id="tab-2" name="tabs">
                         <label for='tab-2'>
-                            <div class="tab-t">연구개발</div>
+                            <div class="tab-t">이차전지</div>
                         </label>
-                        <div class="menu_content">
-                            <li><a href="#">태양광</a></li>
-                            <li><a href="#">ESS</a></li>
-                            <li><a href="#">전력망 보안</a></li>
-                        </div>
+                        <ul class="menu_content">
+                            <li><a href="#">연구개발</a></li>
+                        <li><a href="#">이차전지 재활용</a></li>
+                        <li><a href="#">ESS</a></li>
+                        </ul>
                     </div>
 
                     <div class="wrap-3">
                         <input type="radio" id="tab-3" name="tabs">
                         <label for='tab-3'>
-                            <div class="tab-t">사업분야</div>
+                            <div class="tab-t">신재생에너지</div>
                         </label>
-                        <div class="menu_content">
-                            <li><a href="#">태양광시스템</a></li>
-                            <li><a href="#">전력공급시스템</a></li>
-                            <li><a href="#">특수용시스템</a></li>
-                            <li><a href="#">ESS</a></li>
-                            <li><a href="#">유지보수</a></li>
-                        </div>
+                        <ul class="menu_content">
+                            <li><a href="#">연구개발</a></li>
+                        <li><a href="#">독립형시스템</a></li>
+                        <li><a href="#">계통연계시스템</a></li>
+                        <li><a href="#">하이브리드시스템</a></li>
+                        </ul>
                     </div>
 
-                    <div class="wrap-7">
-                        <input type="radio" id="tab-7" name="tabs">
-                        <label for='tab-7'>
+                    <div class="wrap-4">
+                        <input type="radio" id="tab-4" name="tabs">
+                        <label for='tab-4'>
+                            <div class="tab-t">유지보수</div>
+                        </label>
+                        <ul class="menu_content">
+                            <li><a href="#">ESS 유지보수</a></li>
+                        <li><a href="#">태양광 유지보수</a></li>
+                        </ul>
+                    </div>
+                    <div class="wrap-5">
+                        <input type="radio" id="tab-5" name="tabs">
+                        <label for='tab-5'>
                             <div class="tab-t">커뮤니티</div>
                         </label>
-                        <div class="menu_content">
+                        <ul class="menu_content">
                             <li><a href="#">공지사항</a></li>
                             <li><a href="#">자료실</a></li>
                             <li><a href="#">보도자료</a></li>
-                        </div>
+                        </ul>
                     </div>
                 </ul>
             </div>
@@ -220,31 +231,31 @@
 
 
                 <div class="area2-range" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="scroll_position">
-                        <div class="tool-icon">
+                    <section class="scroll_position">
+                        <article class="tool-icon">
                             <img src="solar/service1.jpg" alt="신재생에너지 사업부 대표이미지">
                             <h2>신재생에너지 사업부</h2>
                             <p>신재생에너지 발전시스템으로 전기 에너지를 저장하고 효율적으로 공급, 관리합니다.</p>
-                        </div>
+                        </article>
 
-                        <div class="tool-icon">
+                        <article class="tool-icon">
                             <img src="solar/service2.jpg" alt="이차전지 사업부(안정화) 대표이미지">
                             <h2>이차전지 사업부(안정화)</h2>
                             <p>안전한 후방산업을 위해 이차전지를 안정화하는 솔루션을 제공합니다.</p>
-                        </div>
+                        </article>
 
-                        <div class="tool-icon">
+                        <article class="tool-icon">
                             <img src="solar/service3.jpg" alt="이차전지 사업부(재활용) 대표이미지">
                             <h2>이차전지 사업부(재활용)</h2>
                             <p>안정화된 이차전지를 재활용하여 자원 순환 체계를 구축합니다.</p>
-                        </div>
+                        </article>
 
-                        <div class="tool-icon">
+                        <article class="tool-icon">
                             <img src="solar/service4.jpg" alt="유지보수 대표이미지">
                             <h2>유지보수</h2>
                             <p>삼성SDI 배터리 유지 보수 전문 업체로서 독보적인 전문성을 보유하고 있습니다.</p>
-                        </div>
-                    </div>
+                        </article>
+                    </section>
                 </div>
             </div>
         </section>
@@ -271,16 +282,16 @@
         <section id='section3'>
             <div class="etc" data-aos="fade-up" data-aos-duration="1000">
                 <div class="notice">
-                    <p>NEWS</p>
+                    <h2>NEWS</h2>
                     <div class="content">
-                        <button class="content-date">
+                        <button class="content-date" type="button">
                             <div class="date">
                                 <span class="day"></span>
                                 <span class="year"></span>
                             </div>
                             <p>솔라라이트, 배터리 재활용 위한 건식방전 공정 기술개발</p>
                         </button>
-                        <button class="content-date">
+                        <button class="content-date" type="button">
                             <div class="date">
                                 <span class="day"></span>
                                 <span class="year"></span>
@@ -295,14 +306,14 @@
                     <div class="area4_box-title">홍보영상</div>
                     <div class="area4_left_btn">
                         <p>솔라라이트의 홍보영상입니다.</p>
-                        <button onclick="alert('클릭')">바로가기</button>
+                        <button onclick="alert('클릭')" type="button">바로가기</button>
                     </div>
                 </div>
                 <div class="area4_right">
                     <div class="area4_box-title">연구개발</div>
                     <div class="area4_left_btn">
                         <p>솔라라이트의 연구개발을 소개합니다.</p>
-                        <button onclick="alert('클릭')">바로가기</button>
+                        <button onclick="alert('클릭')" type="button">바로가기</button>
                     </div>
                 </div>
             </div>
@@ -317,8 +328,6 @@
                 </div>
             </div>
         </section>
-
-
 
         <section id="section4">
             <div class="popup">
@@ -350,11 +359,10 @@
                         31stSt, Fort Bonifacio Taguig City</span></div>
                 <div><strong style="color:#fff;">BUSINESS LICENSE </strong><span>502-86-12059</span> <strong
                         style="color:#fff;">&nbsp;&nbsp;&nbsp;FAX </strong><span>053-289-5506</span></div>
-
             </div>
 
-            <button class="up">
-                <img src=" solar/board_link_btn.png">
+            <button class="up" type="button">
+                <img src=" solar/board_link_btn.png" alt="위로가기">
             </button>
         </div>
     </footer>

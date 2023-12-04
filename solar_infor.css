@@ -51,7 +51,7 @@
         text-align: center;
         transform: translate(-50%,-50%);
     }
-    .main_title>h1{
+    .main_title>h2{
         font-family: 'Titillium Web', sans-serif;
         letter-spacing: 1.1px;
         font-size: 2rem;
@@ -134,7 +134,7 @@
 
 
 
-    .werg{
+    .content-desc{
         text-align: left;
         position: relative;
         margin-top: 50px;
@@ -143,10 +143,7 @@
         line-height: 1.7;
         font-size: .9rem;
     }
-    .werg>h1{
-        font-size: 1.3rem;
-    }
-    .werg img{
+    .content-desc>img{
         width: 200px;
         position: relative;
         margin-top: 8%;
@@ -163,7 +160,7 @@
         margin-top: 150px;
         text-align: center;
     }
-    .mission>h1{
+    .mission>h2{
         margin-bottom: 60px;
     }
     .mission_word{
@@ -185,14 +182,14 @@
         justify-content: center;
         align-items: center;
     }
-    .values>div:nth-child(1){
+    .values>li:nth-child(1){
         padding: 20px;
         width: 100%;
         font-size: 1rem;
         border-radius: 5px;
         border: 1px solid #222;
     }
-    .values>div:nth-child(2){
+    .values>li:nth-child(2){
         padding: 20px;
         width: 100%;
         margin: 10px 0;
@@ -200,7 +197,7 @@
         border-radius: 5px;
         background: rgba(228, 228, 228, 0.4);
     }
-    .values>div:nth-child(3){
+    .values>li:nth-child(3){
         padding: 20px;
         width: 100%;
         font-size: 1rem;
@@ -232,7 +229,7 @@
         width: 95%;
         height: auto;
     }
-    .ci>h1{
+    .ci>h2{
         margin-bottom: 30px;
         font-size: 2rem;
     }
@@ -245,17 +242,17 @@
     .ci_area>img{
         width: 100%;
     }
-    .ci_area>div{
+    .ci_area>ul{
         margin-top: 20px;
         width: 90%;
     }
-    .ci_area>div>li{
+    .ci_area>ul>li{
         list-style: square;
         text-align: left;
         font-size: .9rem;
         margin: 20px 0;
     }
-    .ci_area>div>li:nth-last-child(1){
+    .ci_area>ul>li:nth-last-child(1){
         border: none;
     }
 
@@ -397,7 +394,7 @@
         transform: translate(-50%,-50%);
         width: 70%;
     }
-    .main_title>h1{
+    .main_title>h2{
         font-family: 'Titillium Web', sans-serif;
         letter-spacing: 1.1px;
         font-size: 3rem;
@@ -472,7 +469,7 @@
     }
     
     
-    .werg{
+    .content-desc{
         text-align: left;
         position: relative;
         width: 70%;
@@ -481,10 +478,7 @@
         line-height: 1.9;
         font-size: 1rem;
     }
-    .werg h1{
-        line-height: 1.3;
-    }
-    .werg img{
+    .content-desc>img{
         width: 200px;
         position: relative;
         margin-top: 8%;
@@ -500,7 +494,7 @@
         margin-top: 180px;
         text-align: center;
     }
-    .mission>h1{
+    .mission>h2{
         margin-bottom: 80px;
     }
     .mission_word{
@@ -520,20 +514,20 @@
         justify-content: center;
         align-items: center;
     }
-    .values>div:nth-child(1){
+    .values>li:nth-child(1){
         font-size: 1.2rem;
         padding: 120px 60px;
         border-radius: 50%;
         border: 1px solid #222;
     }
-    .values>div:nth-child(2){
+    .values>li:nth-child(2){
         font-size: 1.2rem;
         padding: 120px 60px;
         border-radius: 50%;
         margin-left: -60px;
         background: rgba(228, 228, 228, 0.4);
     }
-    .values>div:nth-child(3){
+    .values>li:nth-child(3){
         font-size: 1.2rem;
         padding: 120px 60px;
         border-radius: 50%;
@@ -563,7 +557,7 @@
         width: 1000px;
         height: 650px;
     }
-    .ci>h1{
+    .ci>h2{
         margin-bottom: 50px;
         font-size: 2rem;
     }
@@ -573,17 +567,17 @@
         justify-content: center;
         align-items: center;
     }
-    .ci_area>div{
+    .ci_area>ul{
         margin-top: 30px;
         width: 600px;
     }
-    .ci_area>div>li{
+    .ci_area>ul>li{
         list-style: square;
         text-align: left;
         font-size: 1rem;
         margin: 20px 0;
     }
-    .ci_area>div>li:nth-last-child(1){
+    .ci_area>ul>li:nth-last-child(1){
         border: none;
     }
 

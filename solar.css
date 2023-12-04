@@ -1,5 +1,5 @@
   /* SCROLL */
-::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     width: 20px;
 }
 ::-webkit-scrollbar-track {
@@ -342,12 +342,12 @@ text-decoration: none; outline: none; word-break: keep-all;}
         height: 50%;
         padding-bottom: 35px;
     }
-    .notice p{
+    .notice>h2{
         font-family: 'Titillium Web', sans-serif;
         margin: 30px 0;
         text-align: center;
         width: 100%;
-        font-size: 2em;
+        font-size: 2.3rem;
         font-weight: 900;  
     }
     .content{
@@ -472,7 +472,7 @@ text-decoration: none; outline: none; word-break: keep-all;}
         -o-transition: all .2s;
         transition: all .2s;
     }
-    .area4_left_btn span:hover, .area4_right_btn span:hover{
+    .area4_left_btn button:hover, .area4_right_btn button:hover{
         background: rgb(0, 137, 171);
         color: #fff;
     }
@@ -817,12 +817,12 @@ text-decoration: none; outline: none; word-break: keep-all;}
         width: 90%;
         height: 100%;
     }
-    .notice p{
+    .notice>h2{
+        font-size: 2.5rem;
         text-align: center;
         font-family: 'Titillium Web', sans-serif;
         margin-bottom: 50px;
         color:rgb(0, 0, 0);
-        font-size: 2.5rem; 
     }
     .content{
         display: -webkit-box;
@@ -856,7 +856,6 @@ text-decoration: none; outline: none; word-break: keep-all;}
         -ms-flex-pack: justify;
         justify-content: space-between;
         border-bottom: 1px solid rgb(236, 236, 236);
-
     }
     .content-date:last-child{
         border-bottom: none;
@@ -888,6 +887,9 @@ text-decoration: none; outline: none; word-break: keep-all;}
     }
     .content-date:hover .date{
         border: 1px solid rgb(0, 137, 171);
+    }
+    .content-date>p{
+        font-size: 1rem;
     }
 
 
@@ -930,7 +932,7 @@ text-decoration: none; outline: none; word-break: keep-all;}
         -o-transition: all .2s;
         transition: all .2s;
     }
-    .area4_left_btn span:hover, .area4_right_btn span:hover{
+    .area4_left_btn button:hover, .area4_right_btn button:hover{
         background: rgb(0, 137, 171);
         color: #fff;
     }
